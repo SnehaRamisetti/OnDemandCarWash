@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>car wash management system</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('../images/loginimage.jpg');
+            background-position: inherit;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+
+        .regform {
+            background-color: rgb(0,0,0,0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>WELCOME TO ON DEMAND CAR WASH SYSTEM</h1>
+        
+        <p>
+            @Html.ActionLink("Click here to REGISTER", "RegisterUser")
+        </p>
+        
+        <p>
+            @Html.ActionLink("Click here to LOGIN", "LoginUser")
+        </p>
+
+    </div>
+</body>
+</html>
